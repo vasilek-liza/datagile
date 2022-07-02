@@ -1,0 +1,23 @@
+.counters {
+    padding: 160px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 992px) { 
+        padding: 100px 0;
+    }
+    &__wrapper {
+        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 992px) { 
+            justify-content: center;
+        }
+
+        &-empty {
+            margin: 0 auto;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+    }
+}

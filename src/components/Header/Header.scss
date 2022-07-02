@@ -1,0 +1,30 @@
+.icon {
+    display: flex;
+    &-logo {
+        background: url(../../assets/icon/logo.svg) no-repeat;
+        width: 118px;
+        max-height: 41px;
+        height: 100%;
+        background-position: center;
+        background-size: contain;
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 22%);
+    position: fixed;
+    left: 0;
+    top: 0;width: 100%;
+    z-index: 2;
+    background: #fff;
+    box-sizing: border-box;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 992px) { 
+        padding: 15px 0;
+    }
+}

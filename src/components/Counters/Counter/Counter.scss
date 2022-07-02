@@ -1,0 +1,54 @@
+.counter {
+    width: 100%;
+    max-width: 245px;
+    height: 200px;
+    border-radius: 13px;
+    border: 2px solid #FF4500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 0 0;
+    margin: 0 5px 20px;
+    &:nth-child(4n) {
+        .counter__value {
+            height: 120px;
+        }
+    }
+    span {
+        color: #FF4500;
+        font-weight: bold;
+    }
+    &__value {
+        font-size: 30px;
+        color: #FF8C00;
+    }
+    .action-panel {
+        width: 100%;
+        box-sizing: border-box;
+        &__button {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &:after {
+                @media (max-width: 992px) { 
+                    padding: 0;
+                }
+            }
+        }
+        &__button_append {
+            &:hover::before {
+                top: 30px;
+                content: "увеличить значение";
+            }
+        }
+        &__button_delete {
+            &:hover::before {
+                top: 30px;
+                content: "уменьшить значение";
+            }
+        }
+    }
+}
